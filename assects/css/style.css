@@ -1,0 +1,282 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* FONT FAMILY */
+@font-face {
+    font-family: gotham_medium;
+    src: url("../font/Gotham-Font/GothamMedium.ttf");
+}
+@font-face {
+    font-family: gotham_regular;
+    src: url("../font/Gotham-Font/GothamLight.ttf");
+}
+@font-face {
+    font-family: gotham_italic;
+    src: url("../font/Gotham-Font/Gotham-XLightItalic.otf");
+}
+@font-face {
+    font-family: gotham_bold;
+    src: url("../font/Gotham-Font/Gotham-Bold.otf");
+}
+@font-face {
+    font-family: gotham_regular;
+    src: url("../font/Gotham-Font/GothamLight.ttf");
+}
+@font-face {
+    font-family: proximaNova;
+    src: url("../font/proximaNova/Proxima Nova Font.otf");
+}
+
+/* TAG */
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/* GOLBAL REUSE CSS */
+.display_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content{
+    width: 960px;
+    margin: 0px auto;
+}
+.title{
+    text-align: center;
+    width: 560px;
+    margin: 0px auto;
+    
+}
+.title h2{
+    text-transform: uppercase;
+    font-family: gotham_bold;
+    font-weight: 700;
+    font-size: 30px;
+    padding-bottom: 15px;
+    position: relative;
+    
+}
+.title p{
+    font-family: proximaNova;
+    font-size: 16px;
+    padding-top: 30px;
+    text-align: center;
+    color: #5a5a5a;
+}
+.title h2::before{
+    content: '';
+    position: absolute;
+    left: 27%;
+    bottom: 0px;
+    width: 250px;
+    height: 3px;
+    background:#303030;
+}
+
+
+
+body{
+    font-family: proximaNova;
+}
+
+/* HEADER SECTION START */
+.header_section{
+    width: 100%;
+    height: 100px;
+    background: #ffff;
+}
+.header_content{
+    height: 100%;
+}
+.logo_area{
+    width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo_area img{
+
+}
+.menu{
+    width: 860px;
+    height: 100%;
+}
+.menu ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+.menu ul li{
+    margin-left: 106px;
+}
+.menu ul li a{
+    font-family: gotham_medium;
+    font-size: 12px;
+    font-weight: 500px;
+    text-transform: uppercase;
+    color:#a7a7a7;
+}
+
+
+/* HOME SECTION START*/
+.home_section{
+    width: 100%;
+    height: 502px;
+    background-image: url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.home_content{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home_info{
+    width: 540px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+}
+.home_info h1{
+    font-family: gotham_bold;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.home_info p{
+    font-family: gotham_italic;
+    font-size: 16px;
+    font-weight: 400;
+}
+.arrow_cicle_1{
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #e9ebe9;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    cursor: pointer;
+}
+.arrow_cicle_2{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.arrow_cicle_2 i{
+    color: #525252;
+    font-size: 16px;
+}
+
+/* HOME SECTION END*/
+
+/* WORK SECTION START*/
+.work_section{
+    width: 100%;
+    height: 914px;
+    padding: 40px 0px;
+}
+.work_content{
+    height: 100%;
+}
+.featured_content{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 3;
+  grid-gap: 58px;
+  margin-top: 55px;
+}
+.featured_image img{
+    width: 100%;
+}
+/* WORK SECTION EMD*/
+
+/* TEAM SECTION START*/
+.team_section{
+    width: 100%;
+    height: 537px;
+    padding: 40px 0px;
+    background: #f3f3f3;
+}
+.team_members{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1;
+    grid-gap: 20px;
+    margin-top: 55px;
+}
+.member{
+    background: #fff;
+    box-shadow: 2px 3px 2px #ddd;
+    text-align: center;
+    height: 209px;
+    padding: 15px;
+}
+.member h3{
+    font-family: gotham_bold;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    color: #303030;
+}
+.member h5{
+    font-family: gotham_italic;
+    font-size: 13px;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    color: #303030;
+}
+.member_socal_links ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.member_socal_links ul li a i{
+    color: #7f7f7f;
+    font-size: 16px;
+    padding: 0px 10px;
+    margin-top: 15px;
+}
+
+/* TEAM SECTION END*/
+
+/* CONTUCT SECTION START*/
+.contuct_section{
+    width: 100%;
+    height: 566px;
+    padding: 40px 0px;
+    background: #fff;
+}
+
+/* CONTUCT SECTION END*/
