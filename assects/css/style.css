@@ -278,5 +278,104 @@ body{
     padding: 40px 0px;
     background: #fff;
 }
+.contuct_area{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.contuct_left{
+    width: 220px;
+    margin-right: 20px;
+    
+}
+.contuct_left h3{
+    font-family: proximaNova;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    color: #5a5a5a;
+    margin-bottom: 20px;
+}
+.contuct_map{
+    border: 2px solid #3333;
+    height: 307px;
+    overflow: hidden;
+}
+.contuct_right{
+    width: 720px;
+}
+.contuct_right h3{
+    font-family: proximaNova;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    color: #5a5a5a;
+    margin-bottom: 20px;
+}
 
+.text_box{
+    height: 210px;
+    width: 720px;
+    outline: none;
+    padding: 20px;
+    resize: none;
+    font-family: gotham_italic;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #5a5a5a;
+    background: #f2f2f2;
+}
+.text_box::placeholder{
+    font-family: gotham_italic;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #5a5a5a;
+}
+.input_area{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.input_area input{
+    width: 490px;
+    padding: 20px;
+    outline: none;
+    background: #f2f2f2;
+    border: 1px solid #d9d9d9;
+}
+.btn{
+    width: 190px;
+    background:#6995a9;
+    padding: 20px;
+    outline: none;
+    border: 1px solid#fff;
+    box-shadow: 2px 2px 4px 1px #ddd;
+    color: #fff;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.footer_section{
+    height: 80px;
+    width: 100%;
+    background: #4f4f4f;
+}
+.footer_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.footer_content p{
+    width: 50%;
+    color: #fff;
+}
+.footer_content span{
+    width: 50%;
+    text-align: right;
+    color: #fff;
+}
 /* CONTUCT SECTION END*/
